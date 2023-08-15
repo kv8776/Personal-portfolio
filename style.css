@@ -1,32 +1,33 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    text-decoration: none;
-    outline: none;
-    border: none;
-    scroll-behavior: smooth;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
 }
 
 :root {
-    --bg-color: #1f242d;
-    --second--bg-color: #323946;
-    --text-color: #fff;
-    --main-color: #0ef;
+  --bg-color: #1f242d;
+  --second--bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
 }
 
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 
 
 }
+
 .home #particles-js {
   position: absolute;
   top: 0;
@@ -34,439 +35,617 @@ body {
   height: 100%;
   width: 100%;
 
- 
+
 }
+
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: var(--bg-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
 .logo {
-    font-size: 2.5rem;
-    color: var(--text-color);
-    font-weight: 600;
-    cursor: default;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
 }
 
 .navbar a {
-    font-size: 2rem;
-    color: var(--text-color);
-    margin-left: 4rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-left: 4rem;
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 #menu-icon {
-    font-size: 3.6rem;
-    color: var(--text-color);
-    display: none;
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
 }
 
 section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
 }
 
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
 }
-.home-content{
+
+.home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
   z-index: 1;
 }
 
-.home-content h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-}
-
-.home-content h3:nth-of-type(2) {
-    margin-bottom: 2rem;
-}
-
-span {
-    color: var(--main-color)
-}
-
-.home-content h1 {
-    font-size: 5.6rem;
-    font-weight: 700;
-    line-height: 1.3;
-}
-.home-img{
+.home .image {
+  flex: 1 1 40rem;
   z-index: 1;
 }
-.home-img img {
+
+.home .image img {
+  width: 70%;
+  margin-left: 6rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.home .image img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.home .content h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.home .content h2 span {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #0ef;
+}
+.typing-text{
+  color: var(--main-color);
+  font-size: 3rem;
+}
+
+
+
+.home .content p {
+  font-size: 2.5rem;
+  color: #eeeeee;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.home .content p span {
+  font-size: 2.5rem;
+  color: #0ef;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.home .btn {
+  margin-top: 1rem;
+  position: absolute;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
+  transition: 0.5s;
+  color: #fff;
+  background:var(--main-color);
+  box-shadow: 0px 5px 18px var(--main-color);
+  font-family: "Nunito", sans-serif;
+}
+
+.home .btn span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.home .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.home .btn:hover {
+  background: var(--main-color);
+  box-shadow: none;
+}
+
+.home .btn:hover i {
+  transform: translateX(5px);
+}
+
+/* social icons start */
+.socials {
+  position: relative;
+  margin-top: 9rem;
+}
+
+.socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.socials .social-icons li {
   display: inline-block;
-    height: 28vw;
-    border-radius:0%;
-    z-index:4;
-  
-
+  margin-bottom: 14px;
 }
 
-.home-content p {
-    font-size: 1.6rem;
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+  z-index: 3;}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color:var(--main-color);
 }
 
-.social-media a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    border: .2rem solid var(--main-color);
-    border-radius: 50%;
-    font-size: 2rem;
-    color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.5s ease;
-    z-index: 3;
+.social-icons a.github:hover {
+  background-color: #0e0e0e;
 }
 
-.social-media a:hover {
-    background: var(--main-color);
-    color: var(--second--bg-color);
-    box-shadow: 0 0 1rem --main-color;
+.social-icons a.twitter:hover {
+  background-color: #225ae9;
 }
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+
+
+.social-icons a.instagram:hover {
+  background-color: #f023cb;
+}
+
+/* social icons end */
+
+/* hero media queries starts*/
+@media (max-width: 450px) {
+  .home .btn {
+    margin: 4rem 0;
+  }
+
+  .socials {
+    margin-top: 12rem;
+  }
+
+  .home .image img {
+    margin-top: -12rem;
+  }
+
+  .home .content p {
+    font-size: 2.2rem;
+  }
+
+  .home .content p span {
+    font-size: 2.2rem;
+  }
+}
+
+
+
+
+
 
 .btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
-    font-size: 2rem;
-    color: var(--second--bg-color);
-    font-weight: 600;
-    letter-spacing: .1rem;
-    transition: .5s ease;
-    z-index: 3;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 2rem;
+  color: var(--second--bg-color);
+  font-weight: 600;
+  letter-spacing: .1rem;
+  transition: .5s ease;
+  z-index: 3;
 }
 
 .btn:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .aboutme {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    gap: 2rem;
-    background: var(--second--bg-color);
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--second--bg-color);
 }
 
 .about-img {
-    display: inline-block;
+  display: inline-block;
 }
 
 .about-img img {
 
-    width: 30vw;
+  width: 30vw;
 }
 
 .heading {
-    text-align: center;
-    font-size: 4.5rem;
+  text-align: center;
+  font-size: 4.5rem;
 }
 
 .about-content {
-    display: inline-block;
+  display: inline-block;
 }
 
 .about-content h2 {
-    text-align: left;
-    line-height: 1.2;
+  text-align: left;
+  line-height: 1.2;
 }
 
 .about-content p {
-    font-size: 2rem;
-    margin: 2rem 0 3rem;
+  font-size: 2rem;
+  margin: 2rem 0 3rem;
 }
 
 
 .skills {
-    min-height: 90vh;
-    background: var(--bg-color);
-  }
-  .skills h2 {
-    color: #fff;
-  }
-  .skills .heading span {
-    color: rgb(255, 230, 0);
-  }
-  .skills .container {
-    display: flex;
-    background:var(--second--bg-color);
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: #fff;
-    border-radius: 1rem;
-    padding: 2rem;
-    width: 90%;
-    margin: auto;
-    margin-top: 2rem;
-  }
-  .skills img{
-    display:block;
-    width: 10rem;
-  }
- .skills .box{
-   text-align: center;
-    background: var(--bg-color);
-    border-radius: .5rem;
-   
-   
- }
- .box:hover{
-    transform: scale(1.03);
-    box-shadow: 0 0 1.5rem var(--main-color);
-   
+  min-height: 90vh;
+  background: var(--bg-color);
+}
 
- }
- .container.box.span{
-   font-size: medium;
-   color: #040308;
- }
-  
-  .education {
-    background:var(--second--bg-color);
-    min-height: 80vh;
-  }
-  .education .qoute {
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: "Nunito", sans-serif;
-    font-weight: 600;
-    margin-top: 0.5rem;
-  }
-  .education .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .education .box-container .box {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    text-align: center;
-    position: relative;
-    margin-top: 2rem;
-    overflow: hidden;
-    transition: 0.3s;
-    background: rgb(252, 252, 252);
-  }
-  .education .box-container .box:hover {
-    transform: scale(1.03);
-    box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
-  }
-  .education .box-container .box .image {
-    flex: 1 1 20rem;
-    width: 100%;
-  }
-  .education .box-container .box img {
-    object-fit: cover;
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  .education .box-container .box .content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    flex-wrap: wrap;
-    flex: 1 1 70rem;
-  }
-  .education .box-container .box .content h3 {
-    font-size: 2.5rem;
-    color: #012970;
-    padding: 0.5rem 0;
-    font-weight: 600;
-    text-align: left;
-    margin-left: 1rem;
-  }
-  .education .box-container .box .content p {
-    color: #2506ad;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    text-align: left;
-  }
-  .education h4 {
-    font-size: 2rem;
-    color: rgb(34, 109, 0);
-    text-align: left;
-    margin: 1rem;
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-  }
-  
-  
-  .contact {
-    background:var(--second--bg-color);
-    min-height: 60vh;
-  }
-  .contact .content .image-box {
-    max-width: 60%;
-    min-width: none;
-    margin-left: 4rem;
-  }
-  .contact .content .image-box img {
-    width: 100%;
-    height: 40rem;
-    position: relative;
-  }
-  .contact .container {
-    max-width: 1050px;
-    display: flex;
-    width: 100%;
-    background: #fff;
-    border-radius: 1.5rem;
-    margin: 2rem 5rem;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  }
-  .contact .container .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2.5rem 2rem;
-  }
- 
-  .contact .content form {
-    width: 45%;
-    margin-right: 3.5rem;
-  }
-  form .form-group {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .form-group .field {
-    height: 50px;
-    display: flex;
-    position: relative;
-    margin: 1rem;
-    width: 100%;
-  }
-  form i {
-    position: absolute;
-    top: 50%;
-    left: 18px;
-    color: rgb(51, 51, 51);
-    font-size: 17px;
-    pointer-events: none;
-    transform: translateY(-50%);
-  }
-  form .field input,
-  form .message textarea {
-    width: 100%;
-    height: 100%;
-    outline: none;
-    padding: 0 16px 0 48px;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    border-radius: 5px;
-    border: 1px solid rgb(51, 51, 51);
-    background: #e5ecfb;
-  }
-  .field input::placeholder,
-  .message textarea::placeholder {
-    color: rgb(51, 51, 51);
-  }
-  .field input:focus,
-  .message textarea:focus {
-    padding-left: 47px;
-    border: 2px solid rgb(115, 3, 167);
-  }
-  .field input:focus ~ i,
-  .message textarea:focus ~ i {
-    color: rgb(115, 3, 167);
-  }
-  form .message {
-    position: relative;
-    margin: 1rem;
-    width: 100%;
-  }
-  form .message i {
-    top: 25px;
-    font-size: 20px;
-    left: 15px;
-  }
-  form .message textarea {
-    min-height: 130px;
-    max-height: 230px;
-    max-width: 100%;
-    min-width: 100%;
-    padding: 12px 20px 0 48px;
-  }
-  form .message textarea::-webkit-scrollbar {
-    width: 0px;
-  }
-  form .button-area {
-    display: flex;
-    float: right;
-    flex-direction: row-reverse;
-  }
-  .button-area button {
-    color: #fff;
-    border: none;
-    outline: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 13px 25px;
-    background: #2506ad;
-    box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
-    transition: 0.3s ease;
-    font-family: "Nunito", sans-serif;
-  }
-  .button-area button:hover {
-    background: #421cecf5;
-  }
-  .button-area span {
-    font-size: 17px;
-    padding: 1rem;
-    display: none;
-  }
-  .button-area button i {
-    position: relative;
-    top: 6px;
-    left: 2px;
-    font-size: 1.5rem;
-    transition: 0.3s;
-    color: #fff;
-  }
-  .button-area button:hover i {
-    left: 8px;
-  }
-  .footer {
-    min-height: auto;
-    padding-top: 0;
-    background: rgb(0, 1, 43);
-  }
-  .footer .box-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .footer .box-container .box {
-    flex: 1 1 25rem;
-    margin: 2.5rem;
-  }
+.skills h2 {
+  color: #fff;
+}
+
+.skills .heading span {
+  color: rgb(255, 230, 0);
+}
+
+.skills .container {
+  display: flex;
+  background: var(--second--bg-color);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.skills img {
+  display: block;
+  width: 10rem;
+}
+
+.skills .box {
+  text-align: center;
+  background: var(--bg-color);
+  border-radius: .5rem;
+
+
+}
+
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 1.5rem var(--main-color);
+
+
+}
+
+.container.box.span {
+  font-size: medium;
+  color: #040308;
+}
+
+.education {
+  background: var(--second--bg-color);
+  min-height: 80vh;
+}
+
+.education .qoute {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.education .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.education .box-container .box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  background: rgb(252, 252, 252);
+}
+
+.education .box-container .box:hover {
+  transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+}
+
+.education .box-container .box .image {
+  flex: 1 1 20rem;
+  width: 100%;
+}
+
+.education .box-container .box img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.education .box-container .box .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+}
+
+.education .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #012970;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.education .box-container .box .content p {
+  color: #2506ad;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.education h4 {
+  font-size: 2rem;
+  color: rgb(34, 109, 0);
+  text-align: left;
+  margin: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+
+.contact {
+  background: #e5ecfb;
+  margin-top: 5%;
+  min-height: 60vh;
+}
+
+.contact .container {
+  max-width: 1050px;
+  width: 100%;
+  background: #fff;
+  border-radius: 1.5rem;
+  margin: 2rem 5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+}
+
+.contact .content .image-box {
+  max-width: 60%;
+  margin-left: 4rem;
+}
+
+.contact .content .image-box img {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+
+.contact .content form {
+  width: 45%;
+  margin-right: 3.5rem;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group .field {
+  height: 50px;
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+
+form i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+form .field input,
+form .message textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 16px 0 48px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 51, 51);
+  background: #e5ecfb;
+}
+
+.field input::placeholder,
+.message textarea::placeholder {
+  color: rgb(51, 51, 51);
+}
+
+.field input:focus,
+.message textarea:focus {
+  padding-left: 47px;
+  border: 2px solid rgb(115, 3, 167);
+}
+
+.field input:focus~i,
+.message textarea:focus~i {
+  color: rgb(115, 3, 167);
+}
+
+form .message {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+
+form .message i {
+  top: 25px;
+  font-size: 20px;
+  left: 15px;
+}
+
+form .message textarea {
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 12px 20px 0 48px;
+}
+
+form .message textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+form .button-area {
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+}
+
+.button-area button {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  transition: 0.3s ease;
+  font-family: "Nunito", sans-serif;
+}
+
+.button-area button:hover {
+  background: #421cecf5;
+}
+
+.button-area span {
+  font-size: 17px;
+  padding: 1rem;
+  display: none;
+}
+
+.button-area button i {
+  position: relative;
+  top: 6px;
+  left: 2px;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.button-area button:hover i {
+  left: 8px;
+}
+
+.footer {
+  min-height: auto;
+  padding-top: 0;
+  background: rgb(0, 1, 43);
+}
+
+.footer .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+  flex: 1 1 25rem;
+  margin: 2.5rem;
+}
