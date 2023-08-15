@@ -116,7 +116,17 @@ section {
   flex: 1 1 40rem;
   z-index: 1;
   margin-top: 2rem;
+  
 }
+@keyframes float {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-5rem); /* Move the image up slightly */
+  }
+}
+  
 
 .home .image img {
   width: 70%;
@@ -124,6 +134,8 @@ section {
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  position: relative;
+  animation: float 4s ease infinite alternate;
 }
 
 .home .image img:hover {
