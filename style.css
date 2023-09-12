@@ -112,7 +112,7 @@ section {
   z-index: 1;
 }
 
-.home .image {
+.home #image {
   flex: 1 1 40rem;
   z-index: 1;
   margin-top: 2rem;
@@ -128,19 +128,18 @@ section {
 }
   
 
-.home .image img {
+.home #image img {
   width: 70%;
   margin-left: 6rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+ border-radius: 50%;
+ 
+  filter: drop-shadow(0 0 12px #0ef);
   cursor: pointer;
   position: relative;
   animation: float 4s ease infinite alternate;
 }
 
-.home .image img:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
+
 
 .home .content h2 {
   font-size: 5rem;
