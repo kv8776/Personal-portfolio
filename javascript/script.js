@@ -1,6 +1,6 @@
 
 const dynamicText = document.querySelector(".typing-text");
-    const words = ["Web development", "Web design", "Coding", "Games"];
+    const words = ["Web development", "Coding", "Games","Web design"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -18,7 +18,7 @@ const dynamicText = document.querySelector(".typing-text");
           setTimeout(() => {
             wordIndex++;
             isDeleting = false;
-          }, 2000); // Delay before switching to the next word
+          }, 000); // Delay before switching to the next word
         }
       } else {
         charIndex--;
